@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Taxa</string>
+    <string name="text_altura">Altura</string>
+    <string name="text_peso">Peso</string>
+    <string name="text_idade">Idade</string>
+    <string name="text_sexo">Sexo</string>
+    <string name="text_maculino">Masculino</string>
+    <string name="text_feminino">Feminino</string>
+    <string name="text_nivel">Nível de atividade física</string>
+    <string name="text_leve">Leve</string>
+    <string name="text_moderado">Moderado</string>
+    <string name="text_intenso">Intenso</string>
+    <string name="text_resultados">Resultados Agrupados</string>
+    <string name="text_semana">Resultado para a semana</string>
+    <string name="text_mes">Resultado para o mês</string>
+    <string name="text_logo">Taxa Metabólica Basal</string>
+    <string name="text_assinatura">by Felipe Sales</string>
+</resources>

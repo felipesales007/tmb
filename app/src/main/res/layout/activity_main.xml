@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.felipe.taxa.MainActivity"
+    android:background="#0f4e69">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="114dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btn_calcular" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calcular"
+        android:src="@drawable/calcular"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_limpar"
+        android:layout_alignBottom="@+id/btn_calcular"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/limpar"
+        android:layout_alignTop="@+id/btn_calcular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_altura"
+        android:id="@+id/text_altura"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/edit_altura"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit_altura"
+        android:backgroundTint="#9d9485"
+        android:background="#9d9485"
+        android:textColor="#000000"
+        tools:targetApi="m"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/text_peso"
+        android:layout_centerHorizontal="true"
+        android:contextClickable="false"
+        android:autoText="false"
+        android:elegantTextHeight="false"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_peso"
+        android:id="@+id/text_peso"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/edit_peso"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edit_peso"
+        android:backgroundTint="#9d9485"
+        android:background="#9d9485"
+        android:textColor="#000000"
+        tools:targetApi="lollipop"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/text_idade"
+        android:layout_alignStart="@+id/edit_altura"
+        android:focusable="true"
+        android:editable="false"
+        android:elegantTextHeight="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_idade"
+        android:id="@+id/text_idade"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/edit_idade"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit_idade"
+        android:backgroundTint="#9d9485"
+        android:background="#9d9485"
+        android:textColor="#000000"
+        tools:targetApi="lollipop"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/text_sexo"
+        android:layout_alignStart="@+id/edit_peso"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_sexo"
+        android:id="@+id/text_sexo"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#a09a9999"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/text_nivel"
+        android:layout_alignParentStart="true">
+    <RadioButton
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_maculino"
+        android:id="@+id/radioButton_masculino"
+        android:checked="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_feminino"
+        android:id="@+id/radioButton_feminimo"
+        android:checked="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_nivel"
+        android:id="@+id/text_nivel"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="#a09a9999"
+        android:layout_above="@+id/radioGroup2"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup2"
+        android:layout_above="@+id/text_resultados"
+        android:layout_alignParentStart="true">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_leve"
+        android:id="@+id/radioButton_leve"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_moderado"
+        android:id="@+id/radioButton_moderado"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_intenso"
+        android:id="@+id/radioButton_intenso"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_resultados"
+        android:id="@+id/text_resultados"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="#a09a9999"
+        android:layout_above="@+id/checkBox_semana"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_semana"
+        android:id="@+id/checkBox_semana"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_above="@+id/checkBox_mes"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_mes"
+        android:id="@+id/checkBox_mes"
+        android:checked="false"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_above="@+id/btn_calcular"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_logo"
+        android:id="@+id/text_logo"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#04155e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_assinatura"
+        android:id="@+id/text_assinatura"
+        android:layout_alignTop="@+id/logo"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textColor="#8b646464" />
+
+</RelativeLayout>
