@@ -8,7 +8,7 @@
 
 | TELA | TELA |
 | --- | --- |
-|<img src="https://uploaddeimagens.com.br/images/001/970/083/original/2.png" width="450" height="450" /> | <img src="https://uploaddeimagens.com.br/images/001/970/084/original/3.png" width="450" height="450" />
+|<img src="https://uploaddeimagens.com.br/images/001/970/083/original/2.png" width="450" height="500" /> | <img src="https://uploaddeimagens.com.br/images/001/970/084/original/3.png" width="450" height="500" />
 
 
 Aplicativo Android desenvolvido para calcular a **taxa metabólica basal** durante o dia, mês e ano, para o sexo masculino ou feminino.
