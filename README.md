@@ -2,10 +2,6 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
-![alt text](https://uploaddeimagens.com.br/images/001/970/083/original/2.png "tela")
-![alt text](https://uploaddeimagens.com.br/images/001/970/084/original/3.png "tela")
-
-
 | TELA | TELA |
 | --- | --- |
 |<img src="https://uploaddeimagens.com.br/images/001/970/083/original/2.png" width="450" height="600" /> | <img src="https://uploaddeimagens.com.br/images/001/970/084/original/3.png" width="450" height="600" />
